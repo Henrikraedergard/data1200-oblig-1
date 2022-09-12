@@ -80,10 +80,11 @@
         <section>
             <h1>Elvebredden cafe</h1>
             <div>
+                <p id="erÅpent">Cafeen er stengt</p>
                 <p>Åpningstider:</p>
                 <p>Mandag - Fredag 10:00-16:00</p>
                 <p>Lørdag 10:00-17:00</p>
-                <p>Søndag stengt</p>
+                <p></p>
             </div>
             <p>Skomværsgata 2
                 3921 Porsgrunn</p>
@@ -95,5 +96,28 @@
 
 
 </body>
+
+<script>
+    const erÅpentEl = document.getElementById("erÅpent");
+    let dag = new Date().getDay();
+    let tid = new Date().getHours();
+    let åpent = false
+
+    if (dag < 6) {
+        if (dag == 5) {
+            if (tid >= 10 && tid <= 16) {
+                setÅpent()
+            }
+        }
+        else if (tid >= 10 && tid <= 17) {
+            setÅpent()
+        }
+    }
+
+    function setÅpent() {
+        const erÅpentEl = document.getElementById("erÅpent");
+        erÅpentEl.innerHTML = "Cafeen er åpen"
+    }
+</script>
 
 </html>
