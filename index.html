@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>Restaurant - Meny</title>
 </head>
 
@@ -19,8 +20,8 @@
         - Main ingredients or description for each dish
         - Easy to find opening hours, location and contact information
 
+        allergener: 🥜🦐🍤🐟🥚
      -->
-
 
     <main>
         <section class="alle-menyer">
@@ -30,7 +31,7 @@
                     <h2 class="tittel">Skagensmørbrød med reker</h2>
                     <p class="forklaring"></p>
                     <p class="pris">185 kr</p>
-                    <p class="allergener">Egg, laktose og skalldyr</p>
+                    <p class="allergener">🥚, laktose og 🦐</p>
                 </li>
             </ul>
             <ul class="meny-liste">
@@ -45,13 +46,13 @@
                     <h2 class="tittel">Foccaica med kylling og currysalat</h2>
                     <p class="forklaring"></p>
                     <p class="pris">185 kr</p>
-                    <p class="allergener">Egg og stangselleri</p>
+                    <p class="allergener">🥚 og stangselleri</p>
                 </li>
                 <li class="matrett">
                     <h2 class="tittel">Vegansalat</h2>
                     <p class="forklaring"></p>
                     <p class="pris">209 kr</p>
-                    <p class="allergener">Nøtter</p>
+                    <p class="allergener">🥜</p>
                 </li>
                 <li class="matrett">
                     <h2 class="tittel">Tinn spekefjøl</h2>
@@ -66,7 +67,7 @@
                     <h2 class="tittel">brødfjøl med brie, valnøtter og druer</h2>
                     <p class="forklaring"></p>
                     <p class="pris">135 kr</p>
-                    <p class="allergener">Nøtter og laktose</p>
+                    <p class="allergener">🥜 og laktose</p>
                 </li>
                 <li class="matrett">
                     <h2 class="tittel">Brødfjøl med ost og skinke</h2>
@@ -77,47 +78,24 @@
             </ul>
         </section>
 
-        <section>
+        <section class="info">
             <h1>Elvebredden cafe</h1>
             <div>
                 <p id="erÅpent">Cafeen er stengt</p>
                 <p>Åpningstider:</p>
                 <p>Mandag - Fredag 10:00-16:00</p>
                 <p>Lørdag 10:00-17:00</p>
-                <p></p>
             </div>
-            <p>Skomværsgata 2
-                3921 Porsgrunn</p>
-            <p>Epost: reservasjon@elvebreddenkafe.no
-                Telefon: +47 92 66 17 00</p>
+            <p>📍Skomværsgata 2 3921 Porsgrunn</p>
+            <p>📧Epost: reservasjon@elvebreddenkafe.no</p>
+            <p>📞Telefon: +47 92 66 17 00</p>
         </section>
     </main>
 
-
+    <footer>
+        <p>Ikoner fra Apple</p>
+    </footer>
 
 </body>
-
-<script>
-    const erÅpentEl = document.getElementById("erÅpent");
-    let dag = new Date().getDay();
-    let tid = new Date().getHours();
-    let åpent = false
-
-    if (dag < 6) {
-        if (dag == 5) {
-            if (tid >= 10 && tid <= 16) {
-                setÅpent()
-            }
-        }
-        else if (tid >= 10 && tid <= 17) {
-            setÅpent()
-        }
-    }
-
-    function setÅpent() {
-        const erÅpentEl = document.getElementById("erÅpent");
-        erÅpentEl.innerHTML = "Cafeen er åpen"
-    }
-</script>
 
 </html>

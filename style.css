@@ -10,18 +10,20 @@ li, a, button {
     all: initial;
     all: unset;
 }
+body {cursor: default;}
 
 main {
     display: flex;
-    margin: 0px 40px;
-    justify-content: space-between;
+    justify-content: space-around;
     max-width: 2000px;
+    margin-top: 50px;
 }
 
 .alle-menyer {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 60vw;
 }
 
 .meny-liste {
@@ -35,17 +37,30 @@ main {
 }
 
 .tittel {
-
+    font-size: 20px;
 }
 
 .forklaring {
-
+    font-size: 20px;
 }
 
 .pris {
-   
+    font-size: 20px;
 }
 
 .allergener {
-    
+    font-size: 15px;
+}
+
+.info {
+    position: sticky;
+    top: 50px;
+    height: 300px;
+}
+
+footer {
+    background-color: rgb(98, 98, 98);
+    height: 300px;
+    color: white;
+    margin-top: 100px;
 }
