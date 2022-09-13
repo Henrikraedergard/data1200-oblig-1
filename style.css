@@ -18,10 +18,39 @@ a:hover {
 
 body {cursor: default;}
 
+
+header {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.background {
+    height: 300px;
+    width: 100vw;
+    background: linear-gradient(to right, rgba(50,50,50,0.4) 40%, rgba(0,0,0,0));
+    position: absolute;
+    z-index: 1;
+}
+
+.header-img {
+    width: 100%;
+    transform: translateY(-300px);
+    
+}
+
+.logo {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
 main {
     display: flex;
     max-width: 2000px;
-    width: 90vw;
+    width: 85vw;
     margin: 0px auto;
     margin-top: 50px;
     justify-content: space-between;

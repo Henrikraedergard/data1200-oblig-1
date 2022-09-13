@@ -1,4 +1,3 @@
-const erÅpentEl = document.getElementById("erÅpent");
 let dag = new Date().getDay();
 let tid = new Date().getHours();
 let åpent = false
@@ -15,6 +14,7 @@ if (dag < 6) {
 }
 
 function setÅpent() {
-    const erÅpentEl = document.getElementById("erÅpent");
-    erÅpentEl.innerHTML = "Cafeen er åpen"
+    let erÅpentEl = document.getElementById("erÅpent");
+    erÅpentEl.innerHTML = "Cafeen er <span style='color: green;'>åpen</span"
+    console.log(erÅpentEl);
 }
