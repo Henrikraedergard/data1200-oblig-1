@@ -28,7 +28,7 @@ header {
 .background {
     height: 300px;
     width: 100vw;
-    background: linear-gradient(to right, rgba(50,50,50,0.4) 40%, rgba(0,0,0,0));
+    background: linear-gradient(to right, rgba(20,20,20,0.8) 30%, rgba(0,0,0,0));
     position: absolute;
     z-index: 1;
 }
@@ -45,6 +45,20 @@ header {
     top: 50%;
     transform: translateY(-50%);
     color: white;
+    left: 50px;
+}
+
+.logo-ikon {
+    height: 150px;
+}
+
+.bilde-tekst {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+    color: white;
+    background-color: grey;
 }
 
 main {
@@ -60,6 +74,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 50vw;
 }
 
 .meny-liste {
@@ -70,6 +85,14 @@ main {
 
 .matrett {
     margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.produkt-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
 .tittel {

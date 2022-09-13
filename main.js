@@ -14,7 +14,7 @@ if (dag < 6) {
 }
 
 function setÅpent() {
-    let erÅpentEl = document.getElementById("erÅpent");
+    const erÅpentEl = document.getElementById("erÅpent");
     erÅpentEl.innerHTML = "Cafeen er <span style='color: green;'>åpen</span"
     console.log(erÅpentEl);
 }
