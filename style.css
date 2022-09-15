@@ -122,6 +122,11 @@ main {
 .lenke {
     align-items: center;
     display: flex;
+    gap: 5px;
+}
+
+.lenke > img {
+    height: 25px;
 }
 
 .sosiale-lenker {
