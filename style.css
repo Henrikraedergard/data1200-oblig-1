@@ -115,6 +115,20 @@ main {
 .allergener-ikoner {
     height: 30px;
 }
+.sosiale-medier-logo{
+    height: 25px;
+}
+
+.lenke {
+    align-items: center;
+    display: flex;
+}
+
+.sosiale-lenker {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 .info {
     position: sticky;
