@@ -6,6 +6,7 @@
     margin: 0px;
 }
 
+
 li, a, button {
     all: initial;
     all: unset;
@@ -28,7 +29,7 @@ header {
 .background {
     height: 300px;
     width: 100vw;
-    background: linear-gradient(to right, rgba(20,20,20,0.8) 30%, rgba(0,0,0,0));
+    background: linear-gradient(to right, rgba(20,20,20, 0.9) 35%, rgba(0,0,0,0));
     position: absolute;
     z-index: 1;
 }
@@ -96,7 +97,7 @@ main {
 }
 
 .tittel {
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .forklaring {
@@ -119,6 +120,10 @@ main {
     position: sticky;
     top: 50px;
     height: 300px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 footer {

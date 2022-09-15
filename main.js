@@ -2,19 +2,20 @@ let dag = new Date().getDay();
 let tid = new Date().getHours();
 let åpent = false
 
-if (dag < 6) {
-    if (dag == 5) {
-        if (tid >= 10 && tid <= 16) {
-            setÅpent()
+console.log(dag, tid);
+
+if (dag > 0) {
+    if (dag == 6) {
+        if (tid >= 10 && tid < 17){
         }
     }
-    else if (tid >= 10 && tid <= 17) {
+    else if (tid > 10 && tid < 16) {
         setÅpent()
     }
 }
 
 function setÅpent() {
     const erÅpentEl = document.getElementById("erÅpent");
-    erÅpentEl.innerHTML = "Cafeen er <span style='color: green;'>åpen</span"
+    erÅpentEl.innerHTML = "Cafeen er <span title='Vi bruker din maskins lokal tid til å sjekke om cafeen er åpen' style='color: green;'>åpen</span"
     console.log(erÅpentEl);
 }

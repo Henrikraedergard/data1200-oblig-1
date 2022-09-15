@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <link rel="shortcut icon" href="media/stock-photos/logo.png" type="image/x-icon">
     <title>Restaurant - Meny</title>
 </head>
 
@@ -14,23 +15,25 @@
 
     <!-- 
 
-        Oppgave
-        - seven dishes, between three courses (f.ex. 'lunch', 'dinner' and 'snacks')
-        - Contain different allergens
-        - Main ingredients or description for each dish
-        - Easy to find opening hours, location and contact information
+        - Legg til sosiale medier linker
+        - legge til undertekst på matrettene
+        - Fullføre footer med informasjon
+
      -->
 
-    <!-- Bildet fra https://www.dreamstime.com/modern-cafe-interior-covered-green-plant-wall-abstract-background-copy-space-image171188042 -->
+    <!-- Bildeseksjonen på toppen av nettsiden -->
     <header>
+        <!-- Bakgrunnsfarge som gjør venstere siden av bildet mørkere for mer kontrakst til logoen -->
         <div class="background"></div>
-        <img class="header-img" src="media/stock photos/cafe-header.jpeg" alt="Bilde av kafe">
-        <h1 class="logo"><img class="logo-ikon" src="media/stock photos/logo.png" alt=""></h1>
+        <img class="header-img" src="media/stock-photos/cafe-header.jpeg" alt="Bilde av kafe">
+        <h1 class="logo"><img class="logo-ikon" src="media/stock-photos/logo.png" alt=""></h1>
         <p class="bilde-tekst">Bildet er fra <a
-                href="https://www.dreamstime.com/modern-cafe-interior-covered-green-plant-wall-abstract-background-copy-space-image171188042">ProstockStudio
+                href="https://www.dreamstime.com/modern-cafe-interior-covered-green-plant-wall-abstract-background-copy-space-image171188042"
+                title="Gå til dreamstime.com">ProstockStudio
                 | dreamtime.com</a></p>
     </header>
 
+    <!-- Menyen og informasjon -->
     <main>
         <section class="alle-menyer">
             <ul class="meny-liste">
@@ -40,10 +43,11 @@
                     <div class="produkt-info">
                         <h2 class="tittel">Skagensmørbrød med reker</h2>
                         <p class="forklaring"></p>
+                        <!-- samling av allergi-ikoner -->
                         <ul class="allergener">
-                            <li><img class="allergener-ikoner" src="media/allergier/egg.png" alt=""></li>
-                            <li><img class="allergener-ikoner" src="media/allergier/shrimp.png" alt=""></li>
-                            <li><img class="allergener-ikoner" src="media/allergier/milk-products.png" alt=""></li>
+                            <li><img class="allergener-ikoner" title="Egg" src="media/allergier/egg.png" alt=""></li>
+                            <li><img class="allergener-ikoner" title="Skalldyr" src="media/allergier/shrimp.png" alt=""></li>
+                            <li><img class="allergener-ikoner" title="Melk" src="media/allergier/milk-products.png" alt=""></li>
                         </ul>
                     </div>
                     <p class="pris">185 kr</p>
@@ -57,7 +61,7 @@
                         <h2 class="tittel">Gresk salat med rømmedressing</h2>
                         <p class="forklaring">Valgfri med kylling eller spekeskinke</p>
                         <ul class="allergener">
-                            <li><img class="allergener-ikoner" src="media/allergier/milk-products.png" alt=""></li>
+                            <li><img class="allergener-ikoner" title="Melk" src="media/allergier/milk-products.png" alt=""></li>
                         </ul>
                     </div>
                     <p class="pris">219 kr</p>
@@ -68,8 +72,8 @@
                         <h2 class="tittel">Foccaica med kylling og currysalat</h2>
                         <p class="forklaring"></p>
                         <ul class="allergener">
-                            <li><img class="allergener-ikoner" src="media/allergier/egg.png" alt=""></li>
-                            <li><img class="allergener-ikoner" src="media/allergier/celery.png" alt=""></li>
+                            <li><img class="allergener-ikoner" title="Egg" src="media/allergier/egg.png" alt=""></li>
+                            <li><img class="allergener-ikoner" title="Stangselleri" src="media/allergier/celery.png" alt=""></li>
                         </ul>
                     </div>
                     <p class="pris">185 kr</p>
@@ -80,7 +84,7 @@
                         <h2 class="tittel">Vegansalat</h2>
                         <p class="forklaring"></p>
                         <ul class="allergener">
-                            <li><img class="allergener-ikoner" src="media/allergier/peanut.png" alt=""></li>
+                            <li><img class="allergener-ikoner" title="Nøtter" src="media/allergier/peanut.png" alt=""></li>
                         </ul>
                     </div>
                     <p class="pris">209 kr</p>
@@ -91,7 +95,7 @@
                         <h2 class="tittel">Tinn spekefjøl</h2>
                         <p class="forklaring">Med utsøkt spekemat og modne oster</p>
                         <ul class="allergener">
-                            <li><img class="allergener-ikoner" src="media/allergier/milk-products.png" alt=""></li>
+                            <li><img class="allergener-ikoner" title="Melk" src="media/allergier/milk-products.png" alt=""></li>
                         </ul>
                     </div>
                     <p class="pris">219 kr</p>
@@ -105,8 +109,8 @@
                         <h2 class="tittel">brødfjøl med brie, valnøtter og druer</h2>
                         <p class="forklaring"></p>
                         <ul class="allergener">
-                            <li><img class="allergener-ikoner" src="media/allergier/milk-products.png" alt=""></li>
-                            <li><img class="allergener-ikoner" src="media/allergier/peanut.png" alt=""></li>
+                            <li><img class="allergener-ikoner" title="Melk" src="media/allergier/milk-products.png" alt=""></li>
+                            <li><img class="allergener-ikoner" title="Nøtter" src="media/allergier/peanut.png" alt=""></li>
                         </ul>
                     </div>
                     <p class="pris">135 kr</p>
@@ -116,7 +120,7 @@
                         <h2 class="tittel">Brødfjøl med ost og skinke</h2>
                         <p class="forklaring"></p>
                         <ul class="allergener">
-                            <li><img class="allergener-ikoner" src="media/allergier/milk-products.png" alt=""></li>
+                            <li><img class="allergener-ikoner" title="Melk" src="media/allergier/milk-products.png" alt=""></li>
                         </ul>
                     </div>
                     <p class="pris">115 kr</p>
@@ -125,21 +129,24 @@
         </section>
 
         <section class="info">
-            <h1>Elvebredden cafe</h1>
+            <h1 class="">Elvebredden cafe</h1>
+            <p id="erÅpent">Cafeen er <span title="Vi bruker din maskins lokal tid til å sjekke om cafeen er åpen" style="color: red;">stengt</span></p>
             <div>
-                <p id="erÅpent">Cafeen er stengt</p>
+                
                 <p>Åpningstider:</p>
                 <p>Mandag - Fredag 10:00-16:00</p>
                 <p>Lørdag 10:00-17:00</p>
             </div>
-            <p>📍Skomværsgata 2 3921 Porsgrunn</p>
-            <p>📧Epost: reservasjon@elvebreddenkafe.no</p>
-            <p>📞Telefon: +47 92 66 17 00</p>
+            <div>
+                <p>📧 reservasjon@elvebreddenkafe.no</p>
+                <p>📞 92 66 17 00</p>
+                <p>📍 Skomværsgata 2, Porsgrunn </p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Ikoner fra Apple og <a href="https://www.flaticon.com" title="icons">Freepik - Flaticon</a></p>
+        <p>Ikoner fra Apple og <a href="https://www.flaticon.com" title="Gå til flaticon.com">Freepik - Flaticon</a></p>
     </footer>
 
 </body>
